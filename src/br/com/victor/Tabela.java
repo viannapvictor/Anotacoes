@@ -3,8 +3,8 @@ package br.com.victor;
 import java.lang.annotation.*;
 
 @Documented
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.TYPE})
 
 public @interface Tabela {
 

@@ -1,9 +1,16 @@
 package br.com.victor;
 
-@Tabela("Nome da tabela")
 public class TabelaAtividade {
 
-    @Tabela("Coluna 01")
+    @Tabela("getNome")
     private String nome;
+
+    public TabelaAtividade (String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
 
 }
